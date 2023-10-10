@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/async_book/part_five/listing-5_2.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/async_book/part_five/listing-5_5.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/async_book/part_five/listing5_16.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/async_book/part_five/listing5_7.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/async_book/part_five/listing5_8.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/async_book/part_five/listing5_9.py" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/async_book/part_five/tst_query.py" dialect="GenericSQL" />
+  </component>
+</project>
