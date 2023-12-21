@@ -3,8 +3,8 @@ from protocol_or_ABC.ABC.iot.message import MessageType
 
 
 class HueLight(Device):
-    def connect(self):
-        print('Connecting to Hue Light...')
+    # def connect(self):
+    #     print('Connecting to Hue Light...')
 
     def disconnect(self):
         print('Disconnecting from Hue Light...')
