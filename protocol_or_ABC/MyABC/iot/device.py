@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
-
-from protocol_or_ABC.ABC.iot.message import MessageType
+from protocol_or_ABC.MyABC.iot.message import MessageType
 
 
 class Device(ABC):
@@ -13,10 +12,9 @@ class Device(ABC):
         pass
 
     @abstractmethod
-    def send_message(self, message: MessageType, data: str) -> None:
+    def send_message(self, msg: MessageType, data: str) -> None:
         pass
 
     @abstractmethod
-    def status_update(self) -> str:
+    def update_status(self) -> str:
         pass
-
