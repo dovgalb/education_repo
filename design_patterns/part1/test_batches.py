@@ -3,6 +3,7 @@ from datetime import date
 import pytest
 
 from design_patterns.part1.model import Batch, OrderLine
+from solid.solid_4i import Line
 
 
 def make_batch_and_line(sku, batch_qty, line_qty):
@@ -43,3 +44,10 @@ def test_can_only_deallocate_allocated_lines():
     batch, unallocated_line = make_batch_and_line("TRIPLET", 20, 2)
     batch.deallocate(unallocated_line)
     assert batch.available_quantity == 20
+
+
+def test_allocation_is_idempotent():
+    batch, line = make_batch_and_line("TRIPLET", 20, 2)
+    batch.allocate(line)
+    batch.allocate(line)
+    assert batch.available_quantity == 18
